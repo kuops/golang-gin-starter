@@ -1,8 +1,10 @@
 package app
 
 import (
+	"context"
 	"fmt"
 	"github.com/spf13/cobra"
+	"golang-gin-starter/interal/server"
 )
 
 
@@ -14,6 +16,7 @@ func NewCommand() *cobra.Command {
 		DisableAutoGenTag: true,
 		Run: func(cmd *cobra.Command, args []string) {
 			fmt.Println("hello gin starter!")
+			server.Run(context.Background())
 		},
 	}
 	return command
