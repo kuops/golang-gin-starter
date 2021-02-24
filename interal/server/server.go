@@ -10,6 +10,7 @@ import (
 
 func Run(ctx context.Context) {
 	router := gin.Default()
+	registerRouter(router)
 	server := &http.Server{
 		Addr:    ":8080",
 		Handler: router,
