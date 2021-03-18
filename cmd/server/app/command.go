@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 	"github.com/spf13/cobra"
-	"golang-gin-starter/interal/server"
+	"golang-gin-starter/internal/pkg/server"
 )
 
 
